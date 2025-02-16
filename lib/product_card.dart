@@ -28,7 +28,7 @@ class ProductCard extends StatelessWidget {
         crossAxisAlignment: CrossAxisAlignment.start,
         children: [
           Text(
-            "$title",
+            title,
             style: Theme.of(context).textTheme.titleMedium,
           ),
           Text(
@@ -38,7 +38,7 @@ class ProductCard extends StatelessWidget {
           Center(
             child: Image(
               height: 160,
-              image: AssetImage("$image"),
+              image: AssetImage(image),
             ),
           ),
         ],
